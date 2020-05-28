@@ -1,7 +1,7 @@
 body{
     /* "a specific tag like, say, you want all <a> tags to be styled in a particular way," */
     /* important makes it have top priority so the color is pink */
-    background-color:#fa9898 !important;
+    background-color:#343a40;
 }
 /* "only certain subsets of tags by using the class="" attribute in a tag and specifying .class in the stylesheet," */
 .contactInfo {
@@ -55,3 +55,18 @@ div.showHidden:hover p.defaultHidden {
     font-size: 100px;
     font-weight: bold;
 }
+div.a {
+    text-align: center;
+    border-radius: 10px;
+    background-color:#1d2024;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
