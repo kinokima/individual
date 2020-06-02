@@ -20,8 +20,8 @@ body{
     width: 200px;
     height: 200px;
   }
-  .box h1{
-    font-size: 40px;
+  .box h2{
+    font-size: 30px;
     letter-spacing: 4px;
     font-weight: 100;
   }
