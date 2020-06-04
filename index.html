@@ -23,8 +23,21 @@
         </script>
         <link rel="stylesheet" href="styles2.css">
         <title>Personal WebSite</title>
+        <script>
+            var text = "Kenneth Nguyen";
+            var i = 0;
+            var speed = 327;
+            // loops until i is the length of the text
+            function typeOutName() {
+                if (i < text.length) {
+                    document.getElementById("myName").innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typeOutName, speed);
+                }
+            }
+        </script>
     </head>
-    <body>
+    <body onload="typeOutName()">
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
             <!-- NavBar -->
             <ul class="navbar-nav">
@@ -53,7 +66,8 @@
             <img src="Media/Myself2.jpg" alt="" class="box-img">
             <br>
             <br>
-            <h1>Kenneth Nguyen</h1>
+            <!-- Calling the typing name script created above-->
+            <h1 id = "myName"></h1>
             <h5>UW Bothell Student</h5>
             <br>
             <p>
