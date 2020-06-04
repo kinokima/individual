@@ -1,37 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
-        <!-- Anything with "" are things asked of us to do in the Cascading Style Sheets (Groups) project-->
-        <!-- so if a comment has "", the code directly below correlates with what is asked of us to do-->
-        <title>Home Page</title>
-        <!-- this links bootstrap on the HTML page so it works correctly-->
+        <meta charset="utf-8">
+        <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
         <link rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
             integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
             crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
+            crossorigin="anonymous">
+        </script>
         <script
             src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
             integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
+            crossorigin="anonymous">
+        </script>
         <script
             src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
             integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-            crossorigin="anonymous"></script>
-        <!-- "with an externally linked stylesheet text file using the <link rel=""> tag in the <head> tag" -->
-        <link rel="stylesheet" href="Styles.css">
-        <!-- "using an embedded stylesheet using the <style> tag in the <head> tag" -->
-        <style>
-            /* "a specific tag like, say, you want all <a> tags to be styled in a particular way," */
-            h1{
-                color:rgb(255, 255, 255);
-            }
-        </style>
+            crossorigin="anonymous">
+        </script>
+        <link rel="stylesheet" href="styles2.css">
+        <title>Personal WebSite</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
             <!-- NavBar -->
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -55,105 +49,26 @@
                 </li>
             </ul>
         </nav>
-        <!--this is so that my header has a seperate colorblock compared to the rest of the page background-->
-        <!-- "and in-line as a style="" attribute within another HTML tag "-->
-        <div style="text-align: center; padding-top: 20px; padding-bottom: 10px; margin-bottom: 27px">
-            <!-- This adds color to my name and its using Header 1 with the help of span-->
-            <h1><span style = "background-color:#1d2024; color:rgb(255,255, 255); padding: 7px 17px 10px 17px; border-radius: 10px">Kenneth Nguyen</span></h1>
-        </div>
-        <!-- everything needs to be within a container so it can be correctly placed within the grid-->
-        <div class="container-md">
-            <div class="row">
-                <div class="col-1">
-                </div>
-                <div class="col-10">
-                    <div class = "a">
-                        <!-- using header 2 and adding a salmon color to my name-->
-                        <!-- with the help of span, I apply a personal style to the section where my "about me" is located-->
-                        <!-- background color is the background, color is the text color, and padding adds spacing to the text so looks better-->
-                        <h2><span style="color:rgb(255, 255, 255);">About Me </span></h2><br>
-                        <p style="color:white;"> <!-- using P to add text/a paragraph below the About Me to say stuff to the viewer-->
-                            I am in my second year at the University of Washington
-                            Bothell studying interactive media design mainly. Its
-                            something I'm intes
-                            If you want to see my <em>digital portfolio</em>, its on
-                            <!-- this a href tag allows me to produce a clickable link. Also made it strong so it bolds out more -->
-                            <a href="https://kennethmnguyen.com"><strong>kennethmnguyen.com</strong></a>.<br>
-                            During this COVID lockdown I've honestly been sleeping
-                            for very long times and not being the most productive.
-                            Watching a bunch of youtube videos and playing various
-                            different games. Glady though I was able to get ahold of
-                            some weights
-                            so I can still work out during a time where everything
-                            is closed.
-                        </p>
-                    </div>
-                <div class="col-1">
-                </div>
-                </div>
-            </div>
-                <!-- Aligns text so that its centered--><br>
-                <div style="text-align: center">
-                    <h2><span style="background-color:#1d2024; color:rgb(255,255, 255); padding: 7px 17px 10px 17px; border-radius: 10px">Picture of me</span></h2>
-                </div> <br>
-                <img src="https://media.discordapp.net/attachments/103660457113452544/711554518541795348/unknown.png" alt = "knuckles" style = "width:25%"><br>
-            <!-- creating a list and sectioning it off with adding colored text and a color block-->
-            <div class="row">
-                <div class="col">
-                    <h3><span style="background-color:#f73535; color:rgb(255,
-                            255, 255); padding: 0px 15px">Heres some games I've
-                            been playing</span></h3>
-                    <!-- creates a bullet list so I can name stuff down-->
-                    <ul>
-                        <li>The Division 2</li>
-                        <li>TorchLight II</li>
-                        <li>Dragon Ball FighterZ</li>
-                        <li> DAEMON X MACHINA</li>
-                        <li>World War Z</li>
-                    </ul>
-                </div>
-                <!-- creating a list and sectioning it off with adding colored text and a color block-->
-                <div class="col">
-                    <h3><span style="background-color:#f73535; color:rgb(255,
-                            255, 255); padding: 0px 15px">My top 6 shoes that I
-                            wear normally</span></h3>
-                    <!-- creating a number list so I can name stuff in order-->
-                    <ol>
-                        <li>1985 Jordan 1, Chicago/Neutral (or Natural) Grey/UNC
-                            colorway (Luckily I've been able to find 3 pairs
-                            that are wearable in my size)</li>
-                        <li>Triple White Bapesta (basically knockoff Air force
-                            1s)</li>
-                        <li>Off White Blazers</li>
-                        <li>Basic Old Skool Vans</li>
-                        <li>Rick Owen Ramones</li>
-                        <li>New balance 990v4</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-        <div>
-            <!-- "and hover and visibility changes links or other element" -->
-            <!-- "only certain subsets of tags by using the class="" attribute in a tag and specifying .class in the stylesheet,"-->
-            <div class="showHidden">
-                <p style="text-align: center;"><strong><br>Theres a secret.
-                        Hover over this text to show it!</strong></p>
-                <!-- "only certain subsets of tags by using the class="" attribute in a tag and specifying .class in the stylesheet,"-->
-                <p class="defaultHidden"><strong>
-                        ░▄▀▄▀▀▀▀▄▀▄░░░░░░░░░<br>
-                        ░█░░░░░░░░▀▄░░░░░░▄░<br>
-                        █░░▀░░▀░░░░░▀▄▄░░█░█<br>
-                        █░▄░█▀░▄░░░░░░░▀▀░░█<br>
-                        █░░▀▀▀▀░░░░░░░░░░░░█<br>
-                        █░░░░░░░░░░░░░░░░░░█<br>
-                        █░░░░░░░░░░░░░░░░░░█<br>
-                        ░█░░▄▄░░▄▄▄▄░░▄▄░░█░<br>
-                        ░█░▄▀█░▄▀░░█░▄▀█░▄▀░<br>
-                        ░░▀░░░▀░░░░░▀░░░▀░░░<br>
-                        <!-- "or specific unique elements that need to be styled a certain way through using the id="" attribute and #id in the stylesheet."-->
-                        <span id="aggresive">SIR GUCCI LEAN</span><br>
-                    </strong></p>
-            </div>
+        <div class="box">
+            <img src="Media/Myself2.jpg" alt="" class="box-img">
+            <br>
+            <br>
+            <h1>Kenneth Nguyen</h1>
+            <h5>UW Bothell Student</h5>
+            <br>
+            <p>
+                I am in my second year at the University of Washington
+                Bothell studying interactive media design mainly. Throughout this website you will see how exactly I got to this point in my life. Click on the tabs above
+                and you'll see my entire life story through each section of school.
+            </p>
+            <ul>
+                <li><a href="#"><i class="fa fa-facebook-square"
+                            aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter-square"
+                            aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus-square"
+                            aria-hidden="true"></i></a></li>
+            </ul>
         </div>
     </body>
 </html>
